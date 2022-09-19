@@ -40,8 +40,14 @@ func main() {
 	slice3 := mySlice[3:] // 4, 5, 6, 7, 8, 9, 10, 11, 12
 	fmt.Println("slice3: ", slice3)
 
-	// Operations with slices
+	// Append items
 	slice1 = append(slice1, 20, 30) // Adding at the end => // 4, 5, 6, 7, 20, 30
 	fmt.Println("slice1: ", slice1)
+
+	// Removing items
+	//    a = append(a[:i], a[j:]...)
+
+	// Removing one item
+	//    a = append(a[:i], a[i+1:]...)
 
 }
