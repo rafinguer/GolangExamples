@@ -53,11 +53,14 @@ func main() {
 		fmt.Println("MagicStore value of string type: ", v)
 	}
 
-	var stype string = reflect.TypeOf(sstore).String()
+	//var stype string = fmt.Sprintf("%T", sstore)  // TypeOf format string
+	var stype string = reflect.TypeOf(sstore).String() // Extracts the type of sstore
 
 	if strings.Contains(stype, "magicStore") {
 		fmt.Println("sstore is magicStore type: ", sstore)
 	}
+
+	fmt.Printf("Type of sstore is %T\n", sstore) // TypeOf format string
 }
 
 // This function prints the type of a given value
