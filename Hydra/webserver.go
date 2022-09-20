@@ -2,6 +2,7 @@ package main
 
 import (
 	"Hydra/hlogger"
+	"Hydra/shieldBuilder"
 	"fmt"
 	"net/http"
 )
@@ -9,6 +10,11 @@ import (
 func main() {
 	logger := hlogger.GetInstance()
 	logger.Println("Starting Hydra Web Service...")
+
+	// Testing shield builder
+	builder := shieldBuilder.NewShieldBuilder()
+	shield := builder.RaiseLeft().RaiseFront().RaiseRight().Build()
+	fmt.Printf("%+v\n", *shield)
 
 	http.HandleFunc("/", sroot)
 	http.ListenAndServe(":8080", nil)
