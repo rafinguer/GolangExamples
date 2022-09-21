@@ -6,6 +6,9 @@ import (
 	"sync"
 )
 
+// This module implements the Logger interface
+// This also implements the singleton design pattern
+
 type hydraLogger struct {
 	*log.Logger
 	filename string

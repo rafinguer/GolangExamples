@@ -1,12 +1,6 @@
 package main
 
-import (
-	"Hydra/hlogger"
-	"Hydra/shieldBuilder"
-	"fmt"
-	"net/http"
-)
-
+/*
 func main() {
 	logger := hlogger.GetInstance()
 	logger.Println("Starting Hydra Web Service...")
@@ -25,3 +19,4 @@ func sroot(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Welcome to the Hydra Webserver")
 	logger.Println("Received an http Get request on root url")
 }
+*/
