@@ -1,8 +1,8 @@
 package main
 
 import (
+	"LearnGoMyFirstApp/utility"
 	"fmt"
-	"myfirstapp/utility"
 )
 
 func main() {
