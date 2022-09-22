@@ -1,0 +1,16 @@
+ <Customer>
+    <id>1</id>
+    <credit>1000</credit>
+    <contact name="Rafael">
+       <id>1</id>
+       <age>50</age>
+       <salary>2022.9</salary>
+       <married>true</married>
+       <tags>
+          <tag>Architect</tag>
+          <tag>IT</tag>
+          <tag>CTO</tag>
+          <tag>Go</tag>
+       </tags>
+    </contact>
+ </Customer>
