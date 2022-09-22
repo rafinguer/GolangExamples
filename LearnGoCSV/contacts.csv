@@ -1,0 +1,4 @@
+#id;name;age;salary;married;tags
+1;Rafael;50;2022.9;true;Architect,IT,CTO,Go
+2;Edu;52;1970.8;false;Operator,CISCO
+3;Nerea;20;2002.3;false;Interpreter
