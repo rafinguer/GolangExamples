@@ -12,6 +12,38 @@ type CMember struct {
 
 func main() {
 
+	// Single map
+	month := make(map[int]string)
+
+	month[1] = "January"
+	month[2] = "February"
+	month[3] = "March"
+	month[4] = "April"
+	month[5] = "May"
+	month[6] = "June"
+	month[7] = "July"
+	month[8] = "August"
+	month[9] = "September"
+	month[10] = "October"
+	month[11] = "November"
+	month[12] = "December"
+
+	fmt.Println("10th month = ", month[10])
+
+	delete(month, 7) // Deleting July
+
+	fmt.Println("Months = ", month) // July is missing
+
+	// Map for students qualifications
+	students := make(map[string][]int)
+
+	students["Rafael"] = []int{8, 7, 8, 10}
+	students["Edu"] = []int{7, 8, 7, 8}
+	students["Nerea"] = []int{9, 7, 7, 8}
+
+	fmt.Println("Nerea's qualifications: ", students["Nerea"])
+	fmt.Println("Edu's second qualification: ", students["Edu"][1])
+
 	// Declaring a map
 	var m map[string]CMember
 	m = make(map[string]CMember)
