@@ -8,15 +8,11 @@ type Person struct {
 	age  int
 }
 
-/*
-	func (p* Person) Person(name string, age int) *Person {
-		var person Person = new(Person)
-		person.name = name
-		person.age = age
-
-		return person
-	}
-*/
+// Constructor
+func (p *Person) Constructor(name string, age int) {
+	p.name = name
+	p.age = age
+}
 
 // Setting the name of the Person
 func (p *Person) SetName(name string) {

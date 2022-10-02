@@ -24,6 +24,11 @@ func personExample() {
 	p.SetAge(20)
 	fmt.Println("Name: ", p.GetName())
 	fmt.Println("Age: ", p.GetAge())
+
+	// Creating a new Person via Constructor
+	p2 := Person{}
+	p2.Constructor("Edu", 52)
+	fmt.Println("Person: ", p2.String())
 }
 
 // This function shows how to use the Employee class
