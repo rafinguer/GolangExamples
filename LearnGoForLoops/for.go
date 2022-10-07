@@ -51,4 +51,26 @@ func main() {
 		i++
 	}
 
+	// For each/in
+	fmt.Println("--- For each/in arrays ---")
+
+	names := []string{"Rafael", "Edu", "Nerea", "Clemen", "Loli"}
+
+	for idx, name := range names {
+		fmt.Println("#", idx, ": ", name)
+	}
+
+	fmt.Println("--- For each/in with maps ---")
+
+	var ColorMap = make(map[string]string)
+	ColorMap["White"] = "#FFFFFF"
+	ColorMap["Black"] = "#000000"
+	ColorMap["Red"] = "#FF0000"
+	ColorMap["Green"] = "#00FF00"
+	ColorMap["Blue"] = "#0000FF"
+
+	for colorName, colorValue := range ColorMap {
+		fmt.Println("Color '", colorName, "': ", colorValue)
+	}
+
 }
